@@ -1,0 +1,253 @@
+1. Change directory 
+
+cd d:
+cd subfolder
+cd \D:\gitdemo
+cd \your location for local repo
+-------------------
+git init
+
+for initializing local repo
+
+if not .git folder is displayed 
+
+win10/8:got to view>> check "hidden item"
+
+win7:organize>folder & search option>view tab>hidden files radio button>apply & close
+
+---------------------
+CREATE YOUR CODE
+
+git add filename.extention
+git add file1.extention file2.extention file3.extention
+
+
+git add --all
+git add *
+git add .
+
+THIS COMMAND TRACK ALL YOUR ADDED FILES
+
+------------------
+COMMIT YOUR TRACKED FILES
+
+git commit -m "MESSAGE"
+
+it will may ask for ur username & email so follow that instruction and then commit
+---------------------
+
+git config --global user.name "username"
+
+git config --global user.email "email"
+
+NOTE: Make sure you commit again after these instructions
+
+
+----------------------
+INITILIZE YOUR GITHUB REPO URL 
+
+
+git remote add origin GITHUB REPO URL
+
+
+git remote add origin https://github.com/sampada/batch08-02.git
+
+----------------------------
+FOR DETAILS
+
+git config --list
+
+PRESS Q for next line
+
+----------------------------
+For PUSH
+
+git push -u origin master
+
+
+
+
+
+
+
+
+Generate SSH Key through putty software by clicking on Settings of GitHub in order to allow other person sitting on another laptop to push code
+
+
+2.CLONE DIRECTORY
+
+git clone githubURL
+EX:
+git clone url of git
+change to your repo folder
+
+
+3.Create a simple code/text file in local repository
+
+
+
+4.add created file to be tracked for commit
+
+git add filename.extension
+
+
+to add all the newly created files use
+
+git add --all
+
+
+
+5.commit files
+
+git commit -m "first"
+git remote add origin githubURL
+
+
+it will may ask for uer username & email so follow that instruction and then commit
+
+
+6.to list all the tracked files
+
+git ls-tree -r master --name-only
+
+
+7.push the file to global repository
+
+git push
+
+
+8.git config -- list
+
+
+
+
+Now check the diffrence between staged, tracked & untracked files
+
+#create any new file
+#update previously commited files
+#commit any file
+
+
+Now type "git status"
+it will display the details of ALL the files tracked, untracked and commited
+
+
+9.LogOut
+Go to: Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> under Generic Credentials there are some credentials related to Github, click on them and click "Remove"
+
+
+
+
+Branch 
+
+To see all the branches
+git branch 
+
+
+Create a branch
+git branch <branch name> --  not showing in Git Hub
+or 
+Create through GitHub
+
+
+Pull Data of Branch
+git pull origin <BranchName>
+
+
+Move to new Branch
+git checkout <branchname>
+Now write git branch and see the pointing branch
+
+
+In Eclipse you will see Branch name with Project Name
+
+Now make changes to code
+
+git status
+
+git add .
+
+git commit -m "New Change in New Branch"
+
+git push origin <LoginBranch>
+
+Now check code updated from GitHub to New Branch
+
+
+
+Create Pull Request
+1. Click New Pull Request from Git Hub
+2. You can add reviewer also and they will be notified if you make any changes
+3. Add Comments on Code
+4. Click Start Review
+5. Click Submit Review
+6. Click Review Changes
+7. click Merge Pull Request 
+
+//Check all branches
+git branch -a
+
+
+
+The git ls-files command lists all the files that exist in the latest commit on the current branch.
+
+
+
+
+https://www.youtube.com/watch?v=JTE2Fn_sCZs
+https://www.youtube.com/watch?v=0iuqXh0oojo
+
+
+
+Create File
+1. touch file1.txt
+2. git status
+To Push first Commit file and to commit first add it to staging
+3. git add file1.txt
+git add .
+To remove file from staging
+4. git rm --cached file1.txt
+To remove file from staging and Working Dir
+git rm file1.txt
+
+Commit file to staging
+5. git commit -m "Adding Some Files"
+
+to see commit history 
+6. git log
+
+To see list of configuration
+7. git config --list
+
+To add username in configuration
+git config user.name "sampada"
+git config user.email "sampada@infino.co"
+
+
+8. Now create user account in GitHub
+user name: sampada@infino.co
+Password: Infino@123
+username: sampadainfino
+Repository name: https://github.com/sampadainfino/Arh_Selenium
+
+9. Now adding files to staging
+git commit -m "Files added"
+
+10. Now add Files to Remote Repository
+
+
+…or create a new repository on the command line
+echo "# Arh_Selenium" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sampadainfino/Arh_Selenium.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/sampadainfino/Arh_Selenium.git
+git branch -M main
+git push -u origin main
+
+
+
